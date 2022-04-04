@@ -1,6 +1,4 @@
-# TODOS
-
-Completed items are striken through
+# Completed modules in MATLAB
 
 - Take plaintext as input
   - Check if the input array is 16 characters or less (add zero elements if input > 16 chars)
