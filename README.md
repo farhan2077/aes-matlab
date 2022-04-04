@@ -1,6 +1,6 @@
 # Thesis
 
-All files of thesis in one place
+Everything of thesis in one place
 
 ## Folder structure
 
@@ -14,13 +14,28 @@ thesis
 
 ## Important Links
 
-Books, presentation files in [Google drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
+<table>
+<tr>
+<td>
+
+[google drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
+
+</td>
+
+<td>
+
+[google doc](https://docs.google.com/document/d/1znsHhR5HQr-FWDOx_CCvqDU8MGmBCGofvk-yMta4u_M/edit?usp=sharing)
+
+</td>
+
+</tr>
+</table>
 
 ## Collaborators
 
-Supervisor: Md. Tariq Hasan
+**Supervisor:** Md. Tariq Hasan
 
-Organized alphabetically
+Organized _alphabetically_
 
 1. Farhan Bin Amin
 2. S.K. Shadman Sakib
