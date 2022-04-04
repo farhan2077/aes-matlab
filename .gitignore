@@ -1,0 +1,9 @@
+# books & presentation files
+/presentation
+/presentations
+/book
+/books
+
+# matlab
+/matlab/temp
+test.m
