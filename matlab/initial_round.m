@@ -5,4 +5,22 @@ plaintext_dec_mat = reshape(plaintext_dec, [4,4]);  % convert [16x1] matrix into
 roundkey_dec_mat = reshape(double(roundkey), [4,4]);
 
 initial_state_mat = bitxor(plaintext_dec_mat, roundkey_dec_mat);  % xor plaintext matrix and round key matrix
+
+% ----- DEBUG -----
+fprintf('\nplaintext_dec = \n');
+disp(plaintext_dec)
+
+fprintf('\nplaintext_dec_mat = \n');
+disp(plaintext_dec_mat)
+
+fprintf('--------------------\n')
+fprintf('\nroundkey = \n');
+disp(roundkey)
+
+fprintf('\nroundkey_dec_mat = \n');
+disp(roundkey_dec_mat)
+
+fprintf('--------------------\n')
+fprintf('\ninitial_state_mat = \n');
+disp(initial_state_mat)
 end
