@@ -3,6 +3,8 @@
 /presentations
 /book
 /books
+/paper
+/papers
 
 # matlab
 *.asv
