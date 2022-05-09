@@ -14,8 +14,6 @@ for i = 1: length(initial_state)
     sub_bytes_output(i) = sbox(hex2dec(hexnum(1))+1,hex2dec(hexnum(2))+1);
 end
 
-% ----- DEBUG -----
-fprintf('\nsub_bytes_output = \n');
-disp(sub_bytes_output)
+sub_bytes_output = reshape(sub_bytes_output, [4,4]);
 
 end
