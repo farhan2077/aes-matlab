@@ -1,5 +1,3 @@
-function [val1, val2] = getGlobal
+function [val1] = getGlobal
 global x
-global y
 val1 = x;
-val2 = y;

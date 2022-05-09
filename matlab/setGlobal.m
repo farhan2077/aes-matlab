@@ -1,5 +1,3 @@
-function setGlobal(val1,val2)
+function setGlobal(val1)
 global x
-global y
 x = val1;
-y = val2;
