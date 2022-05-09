@@ -4,7 +4,7 @@ function [sub_bytes_output] = sub_bytes(initial_state)
 
 fprintf('\n********** sub_bytes **********\n')
 
-[sbox] = getGlobal;
+[sbox] = get_global;
 
 for i = 1: length(initial_state)
     hexnum = dec2hex(initial_state(i));
