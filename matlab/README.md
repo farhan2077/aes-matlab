@@ -1,9 +1,14 @@
 # Important links
 
-- [reshaping and rearranging](https://www.mathworks.com/help/matlab/math/reshaping-and-rearranging-arrays.html)
+- [reshaping and rearranging arrays](https://www.mathworks.com/help/matlab/math/reshaping-and-rearranging-arrays.html)
+- [Multidimensional Arrays](https://www.mathworks.com/help/matlab/math/multidimensional-arrays.html)
+- [Matrix Indexing in MATLAB](https://www.mathworks.com/company/newsletters/articles/matrix-indexing-in-matlab.html)
+- [Array Indexing](https://www.mathworks.com/help/matlab/math/array-indexing.html)
 - [preallocations explanation](https://www.youtube.com/watch?v=Pqn-y_SnzMs)
 - [array concatation](https://www.mathworks.com/help/matlab/ref/double.cat.html)
 - [reshape](https://www.mathworks.com/help/matlab/ref/reshape.html)
+- [circshift](https://www.mathworks.com/help/matlab/ref/circshift.html)
+- [MATLAB Function Reference - Colon](http://www.ece.northwestern.edu/local-apps/matlabhelp/techdoc/ref/colon.html)
 
 # Interesting tidbits
 
