@@ -5,7 +5,7 @@ close all
 % Global Variable Declarations
 preallocations;
 
-fprintf('********** aes_main **********\n')
+fprintf('********** AES **********\n')
 
 plaintext = 'ARandomPlainText';
 % plaintext = input('Type in an input message (16 characters or less):\n','s');  % 's' converts input to string

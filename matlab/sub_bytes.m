@@ -1,8 +1,6 @@
 function [sub_bytes_output] = sub_bytes(initial_state)
 % i/p > dec, 1x16
-% o/p > dec, 1x16
-
-fprintf('\n********** sub_bytes **********\n')
+% o/p > dec, 4x4
 
 [sbox] = get_global;
 
