@@ -15,7 +15,10 @@ sub_bytes_output = sub_bytes(initial_state);
 % 2. Shift Rows | shift_rows
 shift_rows_output = shift_rows(sub_bytes_output);
 
-output = shift_rows_output;
+% 3 Mix Columns | mix_columns
+mix_columns_output = mix_columns(shift_rows_output);
+
+output = mix_columns_output;
 
 % DEBUG
 fprintf('\nplaintext_dec = \n');
@@ -32,5 +35,8 @@ disp(sub_bytes_output)
 
 fprintf('\nshift_rows_output = \n');
 disp(shift_rows_output)
+
+fprintf('\nmix_columns_output = \n');
+disp(mix_columns_output)
 
 end
