@@ -13,6 +13,14 @@ thesis
 └── presentation # added to gitignore
 ```
 
+### Development
+
+Run the following command before working on the project to get latest updates
+
+```sh
+git pull
+```
+
 ### Important Links
 
 1. [Google Drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
