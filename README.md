@@ -1,41 +1,25 @@
-# Thesis
+<div align="center">
+    <h1>Thesis - AES Encoder & Decoder</h1>
+    <p>Everything of thesis in one place</p>
+</div>
 
-Everything of thesis in one place
-
-## Folder structure
+### Folder structure
 
 ```sh
 thesis
-├── books
+├── books # added to gitignore
 ├── matlab
-│   └── //more later
-└── presentation
+├── papers # added to gitignore
+└── presentation # added to gitignore
 ```
 
-## Important Links
+### Important Links
 
-<table>
-<tr>
-<td>
+1. [Google Drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
+2. [Google Docs](https://docs.google.com/document/d/1znsHhR5HQr-FWDOx_CCvqDU8MGmBCGofvk-yMta4u_M/edit?usp=sharing)
 
-[google drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
+### Collaborators
 
-</td>
-
-<td>
-
-[google doc](https://docs.google.com/document/d/1znsHhR5HQr-FWDOx_CCvqDU8MGmBCGofvk-yMta4u_M/edit?usp=sharing)
-
-</td>
-
-</tr>
-</table>
-
-## Collaborators
-
-**Supervisor:** Md. Tariq Hasan
-
-Organized _alphabetically_
-
-1. Farhan Bin Amin
-2. S.K. Shadman Sakib
+1. **Supervisor:** Md. Tariq Hasan
+2. Farhan Bin Amin
+3. S.K. Shadman Sakib
