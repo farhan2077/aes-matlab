@@ -9,8 +9,10 @@ pdm = [
     1   1   2   3;
     3   1   1   2];
 
-% srw =  shift_rows_output converted from dec to hex
+% sro =  shift_rows_output converted from dec to hex
 sro = shift_rows_output;
+
+mix_columns_output = zeros(4);  % pre allocation
 
 for col = 1:4
     row = 1;
