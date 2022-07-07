@@ -1,11 +1,11 @@
-function [output] = aes_encryption(plaintext ,roundkeys)
+function [output] = aes_encryption(plaintext ,initial_roundkey, roundkeys)
 % i/p > char, 1x16
 % o/p >
 
 plaintext_dec = double(plaintext);
 
 %  INITIAL ROUND
-initial_state = bitxor(plaintext_dec, roundkeys);
+initial_state = bitxor(plaintext_dec, initial_roundkey);
 
 % MAIN ROUND
 
@@ -24,7 +24,10 @@ output = mix_columns_output;
 fprintf('\nplaintext_dec = \n');
 disp(plaintext_dec)
 
-fprintf('\nroundkeys dec = \n');
+fprintf('\ninitial_roundkey = \n');
+disp(initial_roundkey)
+
+fprintf('\nroundkeys = \n');
 disp(roundkeys)
 
 fprintf('\ninitial_state = \n');
