@@ -1,6 +1,6 @@
-function [output] = aes_encryption(plaintext ,initial_roundkey, roundkeys)
+function [ciphertext] = aes_encryption(plaintext ,initial_roundkey, roundkeys)
 % i/p > char, 1x16
-% o/p >
+% o/p > char, 1x16
 
 plaintext_dec = double(plaintext);
 
@@ -23,35 +23,35 @@ for i = 1: 10
 
     % 4 Add Round Key | add_round_key
     add_round_key_output = add_round_key(mix_columns_output, roundkeys{i});
-    
-    disp("add_round_key_output")
-    disp(add_round_key_output)
-    output = add_round_key_output;
+
+    main_round_output = add_round_key_output;
 end
 
-% DEBUG
-fprintf('\nplaintext_dec = \n');
-disp(plaintext_dec)
+ciphertext = char(reshape(main_round_output, [1, 16]));
 
+% DEBUG
+% fprintf('\nplaintext_dec = \n');
+% disp(plaintext_dec)
+%
 % fprintf('\ninitial_roundkey = \n');
 % disp(initial_roundkey)
-% 
+%
 % fprintf('\nroundkeys = \n');
 % disp(roundkeys)
-% 
+%
 % fprintf('\ninitial_state = \n');
 % disp(initial_state)
-% 
+%
 % fprintf('\nsub_bytes_output = \n');
 % disp(sub_bytes_output)
-% 
+%
 % fprintf('\nshift_rows_output = \n');
 % disp(shift_rows_output)
-% 
+%
 % fprintf('\nmix_columns_output = \n');
 % disp(mix_columns_output)
-
-fprintf('\noutput = \n');
-disp(output)
+%
+% fprintf('\noutput = \n');
+% disp(main_round_output)
 
 end

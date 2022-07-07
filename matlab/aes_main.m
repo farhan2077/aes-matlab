@@ -21,3 +21,9 @@ key = zero_fill(key);
 
 % Message Encryption
 ciphertext = aes_encryption(plaintext, initial_roundkey, roundkeys);
+
+fprintf('\nplaintext = \n');
+disp(plaintext)
+
+fprintf('\nciphertext = \n');
+disp(ciphertext)
