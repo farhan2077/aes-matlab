@@ -13,13 +13,30 @@ thesis
 └── presentation # added to gitignore
 ```
 
+### Prerequisites
+
+1. [Git](https://git-scm.com/)
+2. [Matlab](https://www.mathworks.com/products/matlab.html)
+
 ### Development
 
-Run the following command before working on the project to get latest updates
+1. Download and fetch latest updates from the repository
 
 ```sh
+# Clone repository
+git clone https://github.com/farhan2077/thesis.git
+
+# Change directory
+cd thesis
+
+# Fetch latest updates
 git pull
 ```
+
+2. Run the program in matlab
+   - Go to `matlab` folder
+   - Run `aes_main.m` file
+   - Choose `change folder` if the asked to add the current file to MATLAB path
 
 ### Important Links
 
@@ -28,6 +45,6 @@ git pull
 
 ### Collaborators
 
-1. **Supervisor:** Md. Tariq Hasan
-2. Farhan Bin Amin
-3. S.K. Shadman Sakib
+1. **Supervisor:** [Md. Tariq Hasan](https://discipline.ku.ac.bd/ece/faculty/mth)
+2. [Farhan Bin Amin](https://www.facebook.com/farhanbinamin2077/)
+3. [S.K. Shadman Sakib](https://www.facebook.com/profile.php?id=100015067235514)
