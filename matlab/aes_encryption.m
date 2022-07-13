@@ -30,28 +30,22 @@ end
 ciphertext = char(reshape(main_round_output, [1, 16]));
 
 % DEBUG
-% fprintf('\nplaintext_dec = \n');
-% disp(plaintext_dec)
-%
-% fprintf('\ninitial_roundkey = \n');
-% disp(initial_roundkey)
-%
-% fprintf('\nroundkeys = \n');
-% disp(roundkeys)
-%
-% fprintf('\ninitial_state = \n');
-% disp(initial_state)
-%
-% fprintf('\nsub_bytes_output = \n');
-% disp(sub_bytes_output)
-%
-% fprintf('\nshift_rows_output = \n');
-% disp(shift_rows_output)
-%
-% fprintf('\nmix_columns_output = \n');
-% disp(mix_columns_output)
-%
-% fprintf('\noutput = \n');
-% disp(main_round_output)
+fprintf('\nroundkeys = \n');
+disp(roundkeys)
+
+fprintf('\ninitial_state = \n');
+disp(initial_state)
+
+fprintf('\nsub_bytes_output = \n');
+disp(sub_bytes_output)
+
+fprintf('\nshift_rows_output = \n');
+disp(shift_rows_output)
+
+fprintf('\nmix_columns_output = \n');
+disp(mix_columns_output)
+
+fprintf('\noutput = \n');
+disp(main_round_output)
 
 end
