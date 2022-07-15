@@ -2,6 +2,9 @@ clc
 clear all
 close all
 
+addpath('encryption')
+addpath('decryption')
+
 fprintf('=========== AES ===========\n')
 
 plaintext = 'ARandomPlainText';
@@ -26,8 +29,6 @@ key = zero_fill(key);
 
 % Message Encryption
 ciphertext = aes_encryption(plaintext, initial_roundkey, roundkeys);
-
-
 
 fprintf('\nciphertext = \n');
 disp(ciphertext)
