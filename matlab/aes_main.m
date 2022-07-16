@@ -34,3 +34,11 @@ fprintf('\nciphertext = \n');
 disp(ciphertext)
 
 fprintf('\n===== Encryption End =====\n')
+
+fprintf('\n===== Decryption Start =====\n')
+
+recoverd_plaintext = aes_decryption(ciphertext, initial_roundkey, roundkeys);
+
+disp(recoverd_plaintext)
+
+fprintf('\n===== Decryption Start =====\n')
