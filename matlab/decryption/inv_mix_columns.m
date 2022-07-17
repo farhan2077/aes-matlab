@@ -17,8 +17,6 @@ isbo = inv_sub_bytes_output;
 
 inv_mix_columns_output = zeros(4); % pre allocation
 
-sro
-
 for col = 1:4
     row = 1;
     while(row <= 4)
