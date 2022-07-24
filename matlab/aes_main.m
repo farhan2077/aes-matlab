@@ -21,9 +21,6 @@ disp(key)
 
 fprintf('\n===== Encryption Start =====\n')
 
-plaintext = zero_fill(plaintext);
-key = zero_fill(key);
-
 % generate round keys
 [initial_roundkey, roundkeys] = gen_round_keys(key);
 
