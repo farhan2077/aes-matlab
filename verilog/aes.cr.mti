@@ -1,0 +1,22 @@
+D:/Academic/thesis/verilog/ram_sp_sr_sw.v {1 {vlog -work work D:/Academic/thesis/verilog/ram_sp_sr_sw.v
+Model Technology ModelSim SE vlog 5.7f Compiler 2003.09 Sep 15 2003
+-- Compiling module ram_sp_sr_sw
+
+Top level modules:
+	ram_sp_sr_sw
+
+} {} {}} D:/Academic/thesis/verilog/arithmatic_operators.v {1 {vlog -work work D:/Academic/thesis/verilog/arithmatic_operators.v
+Model Technology ModelSim SE vlog 5.7f Compiler 2003.09 Sep 15 2003
+-- Compiling module arithmetic_operators
+
+Top level modules:
+	arithmetic_operators
+
+} {} {}} D:/Academic/thesis/verilog/sum_bin_tb.v {0 {vlog -work work D:/Academic/thesis/verilog/sum_bin_tb.v
+Model Technology ModelSim SE vlog 5.7f Compiler 2003.09 Sep 15 2003
+-- Compiling module sum_bin_tb
+** Error: D:/Academic/thesis/verilog/sum_bin_tb.v(14): near "(":  expecting: IDENT
+** Error: D:/Academic/thesis/verilog/sum_bin_tb.v(14): near "b":  expecting: ',' ';'
+** Error: D:/Academic/thesis/verilog/sum_bin_tb.v(14): near ")":  expecting: ',' ';'
+
+} {4.0 7.0} {}}
