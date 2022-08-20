@@ -1,13 +1,13 @@
 module ram_4x8_tb();
 
 reg       clk     ;
+reg       rw      ;
 reg  [2:0]addr    ;
 reg  [3:0]data_in ;
 wire [3:0]data_out;
-reg       rw      ;
 
 always
-#10 clk <= ~clk;
+#5 clk <= ~clk;
 
 initial
 begin
@@ -25,6 +25,6 @@ begin
 #10    rw = 1;    addr = 3'b011;
 end
 
-ram_4x8 ram_4x8_ins(.clk(clk), .addr(addr), .data_in(data_in), .data_out(data_out), .rw(rw));
+ram_4x8 ram_4x8_ins(.clk(clk), .rw(rw), .addr(addr), .data_in(data_in), .data_out(data_out));
 
 endmodule
