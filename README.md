@@ -1,24 +1,7 @@
 <div align="center">
-    <h1>Thesis - AES Encoder & Decoder</h1>
-    <p>Everything of thesis in one place</p>
+    <h1>AES Encoder & Decoder</h1>
+    <p>Impemented in MATLAB</p>
 </div>
-
-## Important Links
-
-1. [Google Drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)
-2. [Google Docs](https://docs.google.com/document/d/1znsHhR5HQr-FWDOx_CCvqDU8MGmBCGofvk-yMta4u_M/edit?usp=sharing)
-
-## Folder structure
-
-```sh
-thesis
-├── books # added to gitignore
-├── matlab
-├── papers # added to gitignore
-└── presentation # added to gitignore
-```
-
-_folders added to gitignore can be found in [google drive](https://drive.google.com/drive/folders/1dRsak-kmcnoMegEmPiCQnwnJrcU9DTy8?usp=sharing)_
 
 ## Prerequisites
 
@@ -31,10 +14,10 @@ _folders added to gitignore can be found in [google drive](https://drive.google.
 
 ```sh
 # Clone repository
-git clone https://github.com/farhan2077/thesis.git
+git clone https://github.com/farhan2077/aes-matlab.git
 
 # Change directory
-cd thesis
+cd aes-matlab
 
 # Fetch latest updates
 git pull
@@ -45,8 +28,7 @@ git pull
    - Run `aes_main.m` file
    - Choose `change folder` if the asked to add the current file to MATLAB path
 
-## Collaborators
+## Acknowledgements
 
-1. **Supervisor:** [Md. Tariq Hasan](https://discipline.ku.ac.bd/ece/faculty/mth)
-2. [Farhan Bin Amin](https://www.facebook.com/farhanbinamin2077/)
-3. [S.K. Shadman Sakib](https://www.facebook.com/profile.php?id=100015067235514)
+1. Cryptography and Network Security: Principles and Practice by William Stallings
+2. [Rijndael Inspector & The Rijndael Animation](http://www.formaestudio.com/rijndaelinspector/) for AES algorithm visualization
