@@ -8,6 +8,7 @@
 /animations
 
 # matlab
+*.mlx
 *.asv
 /matlab/temp
 practice.m
