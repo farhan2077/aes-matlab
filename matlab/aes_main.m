@@ -3,7 +3,6 @@ clear all
 close all
 
 addpath('encryption')
-addpath('decryption')
 
 fprintf('=========== AES ===========\n')
 
