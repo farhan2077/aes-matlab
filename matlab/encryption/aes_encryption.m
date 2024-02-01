@@ -1,35 +1,21 @@
-function [ciphertext] = aes_encryption(plaintext ,initial_roundkey, roundkeys)
-% i/p > char, 1x16
-% o/p > char, 1x16
+function [ciphertext] = aes_encryption(plaintext, roundkeys, type)
 
 plaintext_dec = double(plaintext);
+plaintext_dec = reshape(plaintext_dec,4,4);
 
-%  INITIAL ROUND
-initial_state = bitxor(plaintext_dec, initial_roundkey);
-
-% MAIN ROUND
-
+add_round_key_output = add_round_key(plaintext_dec, roundkeys{1});%bitxor(plaintext_dec, initial_roundkey);
 for i = 1: 10
-    % 1. Byte Substitution
-    sub_bytes_output = sub_bytes(initial_state);
-
-    % 2. Shift Rows
-    shift_rows_output = shift_rows(sub_bytes_output);
-
-    % 3. Mix Columns
-    % skip mix_columns for round 10 
+    sub_bytes_output = sub_bytes(add_round_key_output,type);
+    shift_rows_output = shift_rows(sub_bytes_output,type);
     if(i <= 9)
-        mix_columns_output = mix_columns(shift_rows_output);
+        mix_columns_output = mix_columns(shift_rows_output,type);
     else
         mix_columns_output = shift_rows_output;
     end
-
-    % 4. Add Round Key
-    add_round_key_output = add_round_key(mix_columns_output, roundkeys{i});
-
-    main_round_output = add_round_key_output;
+    add_round_key_output = add_round_key(mix_columns_output, roundkeys{i+1});
+%     reshape(dec2hex(add_round_key_output)',1,[])
+    add_round_key_output = reshape(add_round_key_output,[1,16]);
 end
-
-ciphertext = char(reshape(main_round_output, [1, 16]));
+ciphertext = add_round_key_output;
 
 end

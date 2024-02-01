@@ -21,7 +21,7 @@ sbox = [
    225   248   152    17   105   217   142   148   155    30   135   233   206    85    40   223;
    140   161   137    13   191   230    66   104    65   153    45    15   176    84   187    22];
 
-rcon  = [1    2    4    8   16    32    64    127    27    54;
+rcon  = [1    2    4    8   16    32    64    128    27    54;
         0     0    0    0   0     0     0     0      0     0;
         0     0    0    0   0     0     0     0      0     0;
         0     0    0    0   0     0     0     0      0     0];
@@ -60,7 +60,7 @@ for i = 1 : n
     col1 = bitxor(bitxor(first_col, last_col), rcon_col);
     col2 = bitxor(col1, key(:, 2));
     col3 = bitxor(col2, key(:, 3));
-    col4 = bitxor(col2, key(:, 4));
+    col4 = bitxor(col3, key(:, 4));
 
     rks{i} = [col1 col2 col3 col4];
 end

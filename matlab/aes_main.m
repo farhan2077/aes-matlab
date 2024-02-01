@@ -3,7 +3,6 @@ clear all
 close all
 
 addpath('encryption')
-addpath('decryption')
 
 fprintf('=========== AES ===========\n')
 
@@ -22,10 +21,10 @@ disp(key)
 fprintf('\n===== Encryption Start =====\n')
 
 % generate round keys
-[initial_roundkey, roundkeys] = gen_round_keys(key);
+roundkeys = gen_round_keys(key);
 
 % Message Encryption
-ciphertext = aes_encryption(plaintext, initial_roundkey, roundkeys);
+ciphertext = aes_encryption(plaintext, roundkeys, 'en')
 
 fprintf('\nciphertext = \n');
 disp(ciphertext)
@@ -34,7 +33,22 @@ fprintf('\n===== Encryption End =====\n')
 
 fprintf('\n===== Decryption Start =====\n')
 
-recoverd_plaintext = aes_decryption(ciphertext, initial_roundkey, roundkeys);
+%Equivalent Inverse
+roundkeys2 = roundkeys;
+for i=2:10
+    roundkeys2{i} = mix_columns(roundkeys{i},'de');
+end
+roundkeys2_flip = roundkeys2;
+for i=1:11
+    roundkeys2_flip{i} = roundkeys2{12-i};
+end
+% disp('Here is roundkeys Equivalent :: ')
+% for i=11:-1:1
+%     reshape(dec2hex(roundkeys2{i})',1,[])
+% end
+tic
+recoverd_equ_plaintext = aes_encryption(ciphertext, roundkeys2_flip, 'de')
+toc
 
 fprintf('\nrecoverd_plaintext = \n');
 disp(recoverd_plaintext)
